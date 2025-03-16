@@ -13,21 +13,99 @@
 
 <body>
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/"
+        <a href="main.html"
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
+            <img src="logo.svg" alt="Logo" width="40" height="40" class="me-2">
             <span class="fs-4">Music Education Gen3</span>
         </a>
 
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="main.html" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </header>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Music Education Gen3</h1>
+                    <p>Music Education Gen3 is a music education platform that offers a wide range of music courses for
+                        students of all ages and levels. Our courses are designed to help students develop their musical
+                        skills and knowledge in a fun and engaging way. Whether you are a beginner or an advanced student,
+                        we have a course that is right for you.</p>
+                    <p>Our courses cover a variety of topics, including music theory, ear training, sight-reading,
+                        improvisation, composition, and more. Our experienced instructors are passionate about music
+                        education and are dedicated to helping students achieve their musical goals.</p>
+                    <p>At Music Education Gen3, we believe that music is a powerful tool for personal growth and
+                        self-expression. We are committed to providing high-quality music education that is accessible to
+                        all students, regardless of their background or experience. Join us today and start your musical
+                        journey!</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="piano.jpg" alt="Piano" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">Thai Music</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Traditional Thai Music</h5>
+                        <p class="card-text">Explore the rich heritage of Thai classical music, including traditional instruments and compositions.</p>
+                        <a href="courses.html#thai" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">Western Music</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Classical & Contemporary</h5>
+                        <p class="card-text">Study classical, jazz, and modern Western music theory and performance.</p>
+                        <a href="courses.html#western" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">Folk Music</div>
+                    <div class="card-body">
+                        <h5 class="card-title">World Folk Traditions</h5>
+                        <p class="card-text">Discover diverse folk music traditions from around the world.</p>
+                        <a href="courses.html#folk" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
