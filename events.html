@@ -8,7 +8,7 @@
     <meta name="description"
         content="Discover excellence in music education with our comprehensive programs for all skill levels.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-contact.css">
+    <link rel="stylesheet" href="styles-events.css">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -19,7 +19,6 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Thai:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-
 </head>
 
 <body>
@@ -46,89 +45,89 @@
                         <a class="nav-link" href="courses.html">หลักสูตร</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">กิจกรรม</a>
+                        <a class="nav-link active" href="events.html">กิจกรรม</a>
                     </li>
                     <li class="nav-item"></li>
-                    <a class="nav-link active" href="contact.html">ติดต่อ</a>
+                    <a class="nav-link" href="contact.html">ติดต่อ</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <main class="contact-container">
-        <h1 class="heading text-center">ติดต่อเรา</h1>
-
-        <div class="row">
-            <!-- Contact Information -->
-            <div class="col-lg-6 mb-4">
-                <div class="contact-info p-4 shadow-sm rounded">
-                    <h3 class="contact-title border-bottom pb-3">ข้อมูลการติดต่อ</h3>
-                    <ul class="list-unstyled contact-list mt-4">
-                        <li class="d-flex align-items-top mb-4 contact-item hover-effect">
-                            <i class="fas fa-map-marker-alt me-3 contact-icon"></i>
-                            <span class="contact-text address-text">
-                                123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น<br>
-                                จังหวัดขอนแก่น 40002
-                            </span>
-                        </li>
-                        <li class="d-flex align-items-center mb-4 contact-item hover-effect">
-                            <i class="fas fa-phone me-3 contact-icon"></i>
-                            <span class="contact-text">+66 2 123 4567</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-4 contact-item hover-effect">
-                            <i class="fas fa-envelope me-3 contact-icon"></i>
-                            <span class="contact-text">info@musiceducation.th</span>
-                        </li>
-                        <li class="d-flex align-items-center contact-item hover-effect">
-                            <i class="fas fa-clock me-3 contact-icon"></i>
-                            <span class="contact-text">จันทร์ - เสาร์: 9:00 น. - 19:00 น.</span>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Events Header -->
+    <div class="events-header">
+        <div class="container">
+            <div class="events-header-content text-center">
+                <h1 class="events-header-title">กิจกรรม</h1>
+                <p class="events-header-subtitle">Experience the magic of music through our world-class events and performances</p>
             </div>
+        </div>
+    </div>
 
-            <!-- Contact Form -->
-            <div class="col-lg-6 mb-4">
-                <div class="contact-form p-4 shadow-sm rounded">
-                    <h3 class="contact-title border-bottom pb-3">ส่งข้อความถึงเรา</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">ชื่อ-นามสกุล</label>
-                            <input type="text" id="name" required>
+    <!-- Events Section -->
+    <section class="events-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Upcoming Events -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card h-100">
+                        <div class="position-relative">
+                            <img src="https://p-u.popcdn.net/event_details/posters/000/082/945/large/210583eb819a7b5881dbd75952d446ac9fe54885.jpg?1741970017" alt="Holiday Concert" class="img-fluid" loading="lazy">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-3">Special Event</span>
                         </div>
-                        <div class="form-group">
-                            <label for="email">อีเมล</label>
-                            <input type="email" id="email" required>
+                        <div class="p-4">
+                            <h2 class="event-title">Holiday Concert Series</h2>
+                            <div class="event-meta mb-3">
+                                <span class="me-3"><i class="far fa-calendar-alt me-2"></i>December 20, 2024</span>
+                                <span><i class="far fa-clock me-2"></i>6:30 PM</span>
+                            </div>
+                            <p class="event-description">Experience the magic of holiday music performed by our talented students and faculty.</p>
+                            <a href="#" class="btn btn-primary">Book Tickets</a>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">หัวข้อ</label>
-                            <input type="text" id="subject" required>
+                    </div>
+                </div>
+
+                <!-- Workshop -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card h-100">
+                        <div class="position-relative">
+                            <img src="https://p-u.popcdn.net/event_details/posters/000/081/802/medium/a83b6f47364fa344d98f13da68b367b2848bc89f.png?1741000016" alt="Music Production Workshop" class="img-fluid" loading="lazy">
+                            <span class="badge bg-warning position-absolute top-0 end-0 m-3">Workshop</span>
                         </div>
-                        <div class="form-group">
-                            <label for="message">ข้อความ</label>
-                            <textarea id="message" rows="4" required></textarea>
+                        <div class="p-4">
+                            <h2 class="event-title">Music Production Workshop</h2>
+                            <div class="event-meta mb-3">
+                                <span class="me-3"><i class="far fa-calendar-alt me-2"></i>January 15, 2025</span>
+                                <span><i class="far fa-clock me-2"></i>10:00 AM</span>
+                            </div>
+                            <p class="event-description">Learn modern music production techniques with industry professionals.</p>
+                            <a href="#" class="btn btn-primary">Register Now</a>
                         </div>
-                        <button type="submit" class="submit-button">ส่งข้อความ</button>
-                    </form>
+                    </div>
+                </div>
+
+                <!-- Competition -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card h-100">
+                        <div class="position-relative">
+                            <img src="https://p-u.popcdn.net/event_details/posters/000/073/321/medium/03aa9977440afb228516ab35889034f06d975d7a.png?1738567953" alt="Young Musicians Competition" class="img-fluid" loading="lazy">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-3">Competition</span>
+                        </div>
+                        <div class="p-4">
+                            <h2 class="event-title">Young Musicians Competition</h2>
+                            <div class="event-meta mb-3">
+                                <span class="me-3"><i class="far fa-calendar-alt me-2"></i>February 5, 2025</span>
+                                <span><i class="fas fa-map-marker-alt me-2"></i>Main Hall</span>
+                            </div>
+                            <p class="event-description">Annual competition showcasing young talent across multiple instruments.</p>
+                            <a href="#" class="btn btn-primary">Enter Competition</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Map -->
-        <div class="col-12">
-            <div class="contact-form">
-                <h3 class="contact-title border-bottom pb-3">แผนที่</h3>
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1566.1442683244848!2d102.82547289797793!3d16.47287635820958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a5ff929689d%3A0xef183ec05f1d0c45!2z4LiE4LiT4Liw4Lio4Li24LiB4Lip4Liy4Lio4Liy4Liq4LiV4Lij4LmMIOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC4guC4reC4meC5geC4geC5iOC4mQ!5e0!3m2!1sth!2sth!4v1742157983159!5m2!1sth!2sth"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white py-5">
@@ -176,7 +175,7 @@
                 <!-- Contact Info -->
                 <div class="col-lg-4 col-md-4">
                     <h5 class="mb-4 footer-heading">ติดต่อ</h5>
-                    <ul class="list-unstyled contact-info-CT">
+                    <ul class="list-unstyled contact-info">
                         <li class="mb-3 d-flex">
                             <i class="fas fa-map-marker-alt contact-icon"></i>
                             <span>123 Music Avenue, Bangkok 10330, Thailand</span>
