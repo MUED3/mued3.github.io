@@ -1402,12 +1402,55 @@
 
         /* List group styles */
         .list-group-item {
-            transition: background-color 0.2s ease;
+            transition: all 0.3s ease;
             padding: 0.75rem 1.25rem;
+            position: relative;
+            overflow: hidden;
         }
 
         .list-group-item:hover {
             background-color: rgba(255, 82, 0, 0.05);
+            transform: translateX(5px);
+        }
+
+        /* Add animation for list items on page load */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply animation to each list item with staggered delay */
+        .list-group-item {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        /* Stagger the animation for each item (add these classes to your list items) */
+        .list-group-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .list-group-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .list-group-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .list-group-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .list-group-item:nth-child(5) {
+            animation-delay: 0.5s;
         }
 
         /* Alert styles */
