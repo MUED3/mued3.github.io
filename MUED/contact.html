@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Music Education</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover excellence in music education with our comprehensive programs for all skill levels.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-contact.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Thai:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="logo.svg" alt="Music Education Logo" width="40" height="40" class="navbar-logo">
+                <a class="navbar-brand" lang="en" href="home.html">Music Education</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" lang="th">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">หลักสูตร</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">กิจกรรม</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link active" href="contact.html">ติดต่อ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <main class="contact-container">
+        <h1 class="heading text-center">ติดต่อเรา</h1>
+
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-lg-6 mb-4">
+                <div class="contact-info p-4 shadow-sm rounded">
+                    <h3 class="contact-title border-bottom pb-3">ข้อมูลการติดต่อ</h3>
+                    <ul class="list-unstyled contact-list mt-4">
+                        <li class="d-flex align-items-top mb-4 contact-item hover-effect">
+                            <i class="fas fa-map-marker-alt me-3 contact-icon"></i>
+                            <span class="contact-text address-text">
+                                123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น<br>
+                                จังหวัดขอนแก่น 40002
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center mb-4 contact-item hover-effect">
+                            <i class="fas fa-phone me-3 contact-icon"></i>
+                            <span class="contact-text">+66 2 123 4567</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-4 contact-item hover-effect">
+                            <i class="fas fa-envelope me-3 contact-icon"></i>
+                            <span class="contact-text">info@musiceducation.th</span>
+                        </li>
+                        <li class="d-flex align-items-center contact-item hover-effect">
+                            <i class="fas fa-clock me-3 contact-icon"></i>
+                            <span class="contact-text">จันทร์ - เสาร์: 9:00 น. - 19:00 น.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-6 mb-4">
+                <div class="contact-form p-4 shadow-sm rounded">
+                    <h3 class="contact-title border-bottom pb-3">ส่งข้อความถึงเรา</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">ชื่อ-นามสกุล</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">อีเมล</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">หัวข้อ</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">ข้อความ</label>
+                            <textarea id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="col-12">
+            <div class="contact-form">
+                <h3 class="contact-title border-bottom pb-3">แผนที่</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1566.1442683244848!2d102.82547289797793!3d16.47287635820958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a5ff929689d%3A0xef183ec05f1d0c45!2z4LiE4LiT4Liw4Lio4Li24LiB4Lip4Liy4Lio4Liy4Liq4LiV4Lij4LmMIOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC4guC4reC4meC5geC4geC5iOC4mQ!5e0!3m2!1sth!2sth!4v1742157983159!5m2!1sth!2sth"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Logo and About -->
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="logo.svg" alt="Music Education Logo" width="40" height="40" class="me-2 footer-logo">
+                        <span class="fw-bold fs-4">Music Education</span>
+                    </div>
+                    <p class="mb-4">Providing excellence in music education since 1995. Our mission is to nurture
+                        musical talent and promote cultural appreciation through quality instruction.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4 footer-heading">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html" class="footer-link">หน้าแรก</a></li>
+                        <li class="mb-2"><a href="about.html" class="footer-link">เกี่ยวกับเรา</a></li>
+                        <li class="mb-2"><a href="courses.html" class="footer-link">หลักสูตร</a></li>
+                        <li class="mb-2"><a href="events.html" class="footer-link">กิจกรรม</a></li>
+                        <li><a href="contact.html" class="footer-link">ติดต่อ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="mb-4 footer-heading">Programs</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="courses.html#thai" class="footer-link">Classical Thai</a></li>
+                        <li class="mb-2"><a href="courses.html#western" class="footer-link">Western Classical</a></li>
+                        <li class="mb-2"><a href="courses.html#contemporary" class="footer-link">Contemporary</a></li>
+                        <li class="mb-2"><a href="courses.html#children" class="footer-link">Children's Program</a></li>
+                        <li><a href="courses.html#master" class="footer-link">Master Classes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-4 footer-heading">ติดต่อ</h5>
+                    <ul class="list-unstyled contact-info-CT">
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>123 Music Avenue, Bangkok 10330, Thailand</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+66 2 123 4567</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@musiceducation.th</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Monday - Saturday: 9:00 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-5">
+                <div class="col">
+                    <hr class="border-secondary">
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <p class="mb-md-0">© 2025 Music Education. All rights reserved.</p>
+                        <div class="footer-links">
+                            <a href="privacy.html" class="footer-link me-3">Privacy Policy</a>
+                            <a href="terms.html" class="footer-link">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
