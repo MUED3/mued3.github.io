@@ -56,6 +56,59 @@
     </nav>
 
     <!-- coueses -->
+    <style>
+        /* Accordion styling */
+        .accordion-button {
+            background-color: var(--light-color);
+            color: var(--accent-orange-dark);
+            font-weight: 600;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--accent-orange-dark);
+            color: var(--light-color);
+        }
+
+        /* Button styling */
+        .btn-A {
+            background-color: var(--accent-orange-primary);
+            color: var(--light-color);
+            border: none;
+            margin: 5px;
+        }
+
+        .btn-A:hover {
+            background-color: var(--accent-orange-dark);
+            color: var(--light-color);
+        }
+
+        /* Table styling */
+        .table thead {
+            background-color: var(--accent-orange-dark);
+            color: var(--light-color);
+        }
+
+        .table tbody tr:hover {
+            background-color: rgba(255, 82, 0, 0.1);
+        }
+
+        /* Badge styling */
+        .badge {
+            background-color: var(--accent-orange-dark) !important;
+            color: var(--light-color);
+        }
+
+        /* Card styling */
+        .card {
+            border-color: var(--accent-orange-light);
+        }
+
+        .card-header {
+            background-color: var(--accent-orange-dark);
+            color: var(--light-color);
+        }
+    </style>
+
     <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom">
             <h3 class="pt-3" style="color: #a73b24; font-weight: 700; text-align: center;">
@@ -1109,54 +1162,193 @@
     </div>
 
     <!-- Course Summary -->
+    <style>
+        .border-orange {
+            border-color: var(--accent-orange-light) !important;
+            transition: border-color 0.3s ease;
+        }
+
+        .bg-orange {
+            background-color: var(--accent-orange-dark) !important;
+            transition: background-color 0.3s ease;
+        }
+
+        .card {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 82, 0, 0.2);
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .table th {
+            background-color: rgba(255, 82, 0, 0.1);
+            width: 40%;
+            transition: background-color 0.3s ease;
+        }
+
+        .table tr:hover {
+            background-color: rgba(255, 82, 0, 0.05);
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-button {
+            transition: all 0.3s ease;
+        }
+
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(255, 82, 0, 0.25);
+        }
+
+        .accordion-button:hover {
+            background-color: rgba(255, 82, 0, 0.1);
+        }
+
+        .accordion-item {
+            border-color: var(--accent-orange-light);
+            transition: border-color 0.3s ease;
+        }
+
+        .accordion-item:hover {
+            border-color: var(--accent-orange-dark);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        ul li {
+            transition: padding-left 0.3s ease;
+        }
+
+        ul li:hover {
+            padding-left: 10px;
+            color: var(--accent-orange-dark);
+        }
+    </style>
+
     <div class="container py-4">
         <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4 course-card">
-                    <div class="card-header course-header">
-                        <h5 class="mb-0">โครงสร้างหลักสูตร</h5>
+            <!-- Program Structure Card -->
+            <style>
+                /* Program Structure Card specific styles */
+                .border-orange {
+                    border-color: var(--accent-orange-light) !important;
+                }
+
+                .bg-orange {
+                    background-color: var(--accent-orange-dark) !important;
+                    color: var(--light-color);
+                }
+
+                /* Badge styles */
+                .badge.bg-orange {
+                    font-size: 0.9rem;
+                    padding: 0.5em 1em;
+                    transition: transform 0.2s;
+                }
+
+                .badge.bg-orange:hover {
+                    transform: scale(1.05);
+                }
+
+                /* List styles */
+                .card-body ul {
+                    margin-bottom: 0;
+                    padding-left: 1.25rem;
+                }
+
+                .list-unstyled li {
+                    line-height: 1.8;
+                    transition: all 0.2s ease;
+                    position: relative;
+                }
+
+                .list-unstyled li:hover {
+                    padding-left: 8px;
+                    color: var(--accent-orange-dark);
+                }
+
+                /* Card styles */
+                .card {
+                    transition: all 0.3s ease;
+                    border-radius: 8px;
+                }
+
+                .card:hover {
+                    transform: translateY(-4px);
+                    box-shadow: 0 4px 12px rgba(255, 82, 0, 0.12);
+                }
+
+                /* Border and text styles */
+                .border-top {
+                    border-color: var(--accent-orange-light) !important; 
+                }
+
+                .fw-semibold {
+                    color: var(--accent-orange-dark);
+                    transition: color 0.2s;
+                }
+
+                .fw-semibold:hover {
+                    color: var(--accent-orange-primary);
+                }
+
+                .text-muted {
+                    color: #707070 !important;
+                }
+
+                /* Card header styles */
+                .card-header {
+                    border-bottom: 2px solid var(--accent-orange-light);
+                }
+            </style>
+
+            <div class="container py-4">
+                <div class="card mb-4 border-orange">
+                    <div class="card-header bg-orange text-white">
+                        <h5 class="card-title mb-0">โครงสร้างหลักสูตร</h5>
                     </div>
-                    <div class="card-body course-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item course-item">
-                                <span class="course-label">จำนวนหน่วยกิตรวมตลอดหลักสูตร:</span> 139 หน่วยกิต
-                            </li>
-                            <li class="list-group-item course-item">
-                                <span class="course-label">1. หมวดวิชาศึกษาทั่วไป:</span> 30 หน่วยกิต
-                            </li>
-                            <li class="list-group-item course-item">
-                                <span class="course-label">2. หมวดวิชาเฉพาะ:</span> 103 หน่วยกิต
-                                <ul class="list-unstyled course-sublist">
-                                    <li>2.1 วิชาชีพครู: 41 หน่วยกิต</li>
-                                    <li>2.2 วิชาเอก: 62 หน่วยกิต</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item course-item">
-                                <span class="course-label">3. หมวดวิชาเลือกเสรี:</span> 6 หน่วยกิต
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-4 major-card">
-                    <div class="card-header major-header">
-                        <h5 class="mb-0">แขนงวิชา</h5>
-                    </div>
-                    <div class="card-body major-body">
-                        <div class="list-group list-group-flush">
-                            <div class="list-group-item major-item">
-                                <h6 class="mb-1">แขนงวิชาดนตรีไทย</h6>
-                                <p class="mb-0 major-description">เน้นการศึกษาดนตรีไทยประเพณี</p>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="fw-semibold">หมวดวิชาศึกษาทั่วไป</span>
                             </div>
-                            <div class="list-group-item major-item">
-                                <h6 class="mb-1">แขนงวิชาดนตรีตะวันตก</h6>
-                                <p class="mb-0 major-description">เน้นการศึกษาดนตรีคลาสสิกตะวันตก</p>
+                            <div class="badge bg-orange">30 หน่วยกิต</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <span class="fw-semibold">หมวดวิชาเฉพาะ</span>
+                                    <ul class="list-unstyled small text-muted mt-1 ms-3">
+                                        <li>- วิชาชีพครู (41 หน่วยกิต)</li>
+                                        <li>- วิชาเอก (62 หน่วยกิต)</li>
+                                    </ul>
+                                </div>
+                                <div class="badge bg-orange">103 หน่วยกิต</div>
                             </div>
-                            <div class="list-group-item major-item">
-                                <h6 class="mb-1">แขนงวิชาดนตรีพื้นบ้าน</h6>
-                                <p class="mb-0 major-description">เน้นการศึกษาดนตรีพื้นบ้านอีสาน</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="fw-semibold">หมวดวิชาเลือกเสรี</span>
                             </div>
+                            <div class="badge bg-orange">6 หน่วยกิต</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                            <div>
+                                <span class="fw-bold">รวมตลอดหลักสูตร</span>
+                            </div>
+                            <div class="badge bg-orange">139 หน่วยกิต</div>
                         </div>
                     </div>
                 </div>
@@ -1164,44 +1356,181 @@
         </div>
     </div>
 
-    <!-- Courses Full Subject -->
+    <!-- Course Categories Details -->
+    <style>
+        /* Card styles */
+        .border-orange-light {
+            border-color: var(--accent-orange-light) !important;
+        }
+
+        .text-orange {
+            color: var(--accent-orange-dark) !important;
+        }
+
+        .bg-orange {
+            background-color: var(--accent-orange-dark) !important;
+            color: var(--light-color) !important;
+        }
+
+        /* Card enhancements */
+        .card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 8px;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 82, 0, 0.15);
+        }
+
+        /* Badge styles */
+        .badge {
+            font-size: 0.85rem;
+            padding: 0.5em 1em;
+            transition: all 0.2s ease;
+        }
+
+        .badge.bg-orange {
+            background-color: var(--accent-orange-dark) !important;
+        }
+
+        .badge.bg-light {
+            color: var(--accent-orange-dark) !important;
+            border: 1px solid var(--accent-orange-light);
+            background-color: white !important;
+        }
+
+        /* List group styles */
+        .list-group-item {
+            transition: background-color 0.2s ease;
+            padding: 0.75rem 1.25rem;
+        }
+
+        .list-group-item:hover {
+            background-color: rgba(255, 82, 0, 0.05);
+        }
+
+        /* Alert styles */
+        .alert-light {
+            background-color: rgba(255, 82, 0, 0.05);
+            border-left: 4px solid var(--accent-orange-dark);
+        }
+
+        /* Section headers */
+        .fw-bold.text-orange {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Card subtitle */
+        .card-subtitle {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-orange-light);
+        }
+    </style>
+
     <div class="container py-4">
-        <div class="card course-detail-card">
-            <div class="card-header course-detail-header">
-                <h5 class="mb-0">รายละเอียดหมวดวิชา</h5>
-            </div>
-            <div class="card-body course-detail-content">
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <h6 class="course-section-title">1. หมวดวิชาศึกษาทั่วไป (30 หน่วยกิต)</h6>
-                        <ul class="list-group list-group-flush course-list">
-                            <li class="list-group-item course-item">1.1 กลุ่มวิชาภาษา (12 หน่วยกิต)</li>
-                            <li class="list-group-item course-item">1.2 กลุ่มวิชามนุษยศาสตร์และสังคมศาสตร์ (12 หน่วยกิต)</li>
-                            <li class="list-group-item course-item">1.3 กลุ่มวิชาวิทยาศาสตร์และคณิตศาสตร์ (6 หน่วยกิต)</li>
-                        </ul>
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-orange shadow-sm">
+                    <div class="card-header bg-orange py-3">
+                        <h5 class="card-title text-white mb-0">โครงสร้างรายวิชาตามหมวดการศึกษา</h5>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <h6 class="course-section-title">2. หมวดวิชาเฉพาะ (103 หน่วยกิต)</h6>
-                        <ul class="list-group list-group-flush course-list">
-                            <li class="list-group-item course-item">2.1 วิชาชีพครู (41 หน่วยกิต)
-                                <ul class="course-sublist">
-                                    <li>- วิชาชีพครูบังคับ (29 หน่วยกิต)</li>
-                                    <li>- วิชาปฏิบัติการสอนในสถานศึกษา (12 หน่วยกิต)</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item course-item">2.2 วิชาเอก (62 หน่วยกิต)
-                                <ul class="course-sublist">
-                                    <li>- วิชาเอกบังคับ (42 หน่วยกิต)</li>
-                                    <li>- วิชาเอกเลือก (20 หน่วยกิต)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h6 class="course-section-title">3. หมวดวิชาเลือกเสรี (6 หน่วยกิต)</h6>
-                        <p class="course-description">นักศึกษาสามารถเลือกเรียนรายวิชาใดๆ ที่เปิดสอนในมหาวิทยาลัย จำนวนไม่น้อยกว่า 6 หน่วยกิต</p>
+                    <div class="card-body p-4">
+                        <!-- General Education Section -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-orange d-flex align-items-center">
+                                <span class="badge bg-orange me-2">1</span>
+                                หมวดวิชาศึกษาทั่วไป
+                                <span class="badge bg-light ms-2">30 หน่วยกิต</span>
+                            </h6>
+                            <div class="ps-4 mt-3">
+                                <div class="card mb-3 border-orange-light">
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                <span>กลุ่มวิชาภาษา</span>
+                                                <span class="badge bg-orange rounded-pill">12 หน่วยกิต</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                <span>กลุ่มวิชามนุษยศาสตร์และสังคมศาสตร์</span>
+                                                <span class="badge bg-orange rounded-pill">12 หน่วยกิต</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                <span>กลุ่มวิชาวิทยาศาสตร์และคณิตศาสตร์</span>
+                                                <span class="badge bg-orange rounded-pill">6 หน่วยกิต</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional Education Section -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-orange d-flex align-items-center">
+                                <span class="badge bg-orange me-2">2</span>
+                                หมวดวิชาเฉพาะ
+                                <span class="badge bg-light ms-2">103 หน่วยกิต</span>
+                            </h6>
+                            <div class="ps-4 mt-3">
+                                <div class="card mb-3 border-orange-light">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-3 text-orange">วิชาชีพครู (41 หน่วยกิต)</h6>
+                                        <ul class="list-group list-group-flush">
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                <span>วิชาชีพครูบังคับ</span>
+                                                <span class="badge bg-orange rounded-pill">29 หน่วยกิต</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                <span>วิชาปฏิบัติการสอนในสถานศึกษา</span>
+                                                <span class="badge bg-orange rounded-pill">12 หน่วยกิต</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card border-orange-light">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-3 text-orange">วิชาเอก (62 หน่วยกิต)</h6>
+                                        <ul class="list-group list-group-flush">
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                <span>วิชาเอกบังคับ</span>
+                                                <span class="badge bg-orange rounded-pill">42 หน่วยกิต</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                <span>วิชาเอกเลือก</span>
+                                                <span class="badge bg-orange rounded-pill">20 หน่วยกิต</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Free Elective Section -->
+                        <div>
+                            <h6 class="fw-bold text-orange d-flex align-items-center">
+                                <span class="badge bg-orange me-2">3</span>
+                                หมวดวิชาเลือกเสรี
+                                <span class="badge bg-light ms-2">6 หน่วยกิต</span>
+                            </h6>
+                            <div class="ps-4 mt-3">
+                                <div class="alert alert-light border-orange-light" role="alert">
+                                    <i class="fas fa-info-circle text-orange me-2"></i>
+                                    นักศึกษาสามารถเลือกเรียนรายวิชาใดๆ ที่เปิดสอนในมหาวิทยาลัย จำนวนไม่น้อยกว่า 6
+                                    หน่วยกิต
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1229,7 +1558,7 @@
 
                 <!-- Quick Links -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <h5 class="mb-4 footer-heading">Quick Links</h5>
+                    <h5 class="mb-4 footer-heading">ผังเว็บไซต์</h5>
                     <ul class="list-unstyled footer-links">
                         <li class="mb-2"><a href="index.html" class="footer-link">หน้าแรก</a></li>
                         <li class="mb-2"><a href="about.html" class="footer-link">เกี่ยวกับเรา</a></li>
@@ -1241,13 +1570,11 @@
 
                 <!-- Programs -->
                 <div class="col-lg-2 col-md-4 col-6">
-                    <h5 class="mb-4 footer-heading">Programs</h5>
+                    <h5 class="mb-4 footer-heading">สาขา</h5>
                     <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="courses.html#thai" class="footer-link">Classical Thai</a></li>
-                        <li class="mb-2"><a href="courses.html#western" class="footer-link">Western Classical</a></li>
-                        <li class="mb-2"><a href="courses.html#contemporary" class="footer-link">Contemporary</a></li>
-                        <li class="mb-2"><a href="courses.html#children" class="footer-link">Children's Program</a></li>
-                        <li><a href="courses.html#master" class="footer-link">Master Classes</a></li>
+                        <li class="mb-2"><a href="courses.html#thai" class="footer-link">ดนตรีไทย</a></li>
+                        <li class="mb-2"><a href="courses.html#western" class="footer-link">ดนตรีตะวันตก</a></li>
+                        <li class="mb-2"><a href="courses.html#contemporary" class="footer-link">ดนตรีพื้นเมือง</a></li>
                     </ul>
                 </div>
 
@@ -1256,20 +1583,20 @@
                     <h5 class="mb-4 footer-heading">ติดต่อ</h5>
                     <ul class="list-unstyled contact-info">
                         <li class="mb-3 d-flex">
-                            <i class="fas fa-map-marker-alt contact-icon"></i>
-                            <span>123 Music Avenue, Bangkok 10330, Thailand</span>
+                            <i class="fas fa-map-marker-alt contact-icon me-2"></i>
+                            <span>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น จังหวัดขอนแก่น 40002</span>
                         </li>
                         <li class="mb-3 d-flex">
-                            <i class="fas fa-phone contact-icon"></i>
-                            <span>+66 2 123 4567</span>
+                            <i class="fas fa-phone contact-icon me-2"></i>
+                            <span>043-343-452</span>
                         </li>
                         <li class="mb-3 d-flex">
-                            <i class="fas fa-envelope contact-icon"></i>
-                            <span>info@musiceducation.th</span>
+                            <i class="fas fa-envelope contact-icon me-2"></i>
+                            <span>musiced@kku.ac.th</span>
                         </li>
                         <li class="d-flex">
-                            <i class="fas fa-clock contact-icon"></i>
-                            <span>Monday - Saturday: 9:00 AM - 7:00 PM</span>
+                            <i class="fas fa-clock contact-icon me-2"></i>
+                            <span>เวลาทำการ จันทร์ - ศุกร์ 8:30 - 16:30 น.</span>
                         </li>
                     </ul>
                 </div>
