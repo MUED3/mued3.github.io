@@ -93,7 +93,7 @@ body {
   :lang(th),
   [lang="th"],
   .thai-text {
-    font-family: 'Noto Sans Thai', sans-serif !important;
+    font-family: 'Noto Sans Thai', 'Font Awesome 6 Free', sans-serif !important;
   }
   
   /* Dynamic font detection using CSS */
@@ -127,7 +127,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+    font-family: 'Inter', 'Noto Sans Thai', 'Font Awesome 6 Free', sans-serif;
     color: var(--dark-color);
     line-height: 1.5;
     min-height: 100%;
@@ -932,11 +932,11 @@ a:focus {
 }
 
 /* ===== ANIMATIONS ===== */
+/* Single declaration for previously duplicated keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -947,7 +947,6 @@ a:focus {
         transform: translateY(20px);
         opacity: 0;
     }
-
     to {
         transform: translateY(0);
         opacity: 1;
